@@ -1,0 +1,86 @@
+/* General Page Styling */
+.service-page {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Container */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Service Card */
+.service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-left: 5px solid #007bff;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-left-color: #ffcc00;
+}
+
+.service-card h2 {
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+.service-card:hover h2 {
+    color: #ffcc00;
+}
+
+.service-card p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Pricing Style */
+.price {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    background: #343a40;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

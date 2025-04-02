@@ -1,0 +1,59 @@
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000 ;
+    background-color: #343a40 !important;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: white !important;
+    font-weight: bold;
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .nav-item {
+    margin-right: 15px;
+  }
+  
+  .nav-link {
+    color: white !important;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #1abc9c !important;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-item {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-toggler {
+      border: none;
+      background: transparent;
+    }
+  }
+  
