@@ -516,7 +516,7 @@ const LandingPage = () => {
                     <h1>India's Most Trusted Legal Platform</h1>
                     <p>Get expert legal advice from 10,000+ verified lawyers across 700+ cities</p>
                     <div className="hero-buttons">
-                        <Link to="/lawyer" className="cta-button">Find a Lawyer</Link>
+                        <Link to="/lawyer/" className="cta-button">Find a Lawyer</Link>
                         <button className="cta-button secondary" onClick={() => setShowPhonePopup(true)}>
                             Call for Legal Help
                         </button>
@@ -618,7 +618,7 @@ const LandingPage = () => {
                     )}
                 </div>
                 <div className="view-all">
-                    <Link to="/lawyer" className="view-all-button">View All Lawyers →</Link>
+                    <Link to="/lawyer/" className="view-all-button">View All Lawyers →</Link>
                 </div>
             </section>
 

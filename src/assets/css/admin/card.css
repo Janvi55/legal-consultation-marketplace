@@ -1,0 +1,134 @@
+/* Base Stat Card Styles */
+.stat-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid;
+    height: 100%;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Color Variants */
+  .stat-card.primary {
+    border-left-color: #4299e1;
+  }
+  
+  .stat-card.success {
+    border-left-color: #48bb78;
+  }
+  
+  .stat-card.warning {
+    border-left-color: #ed8936;
+  }
+  
+  .stat-card.danger {
+    border-left-color: #f56565;
+  }
+  
+  .stat-card.purple {
+    border-left-color: #9f7aea;
+  }
+  
+  /* Icon Container */
+  .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+  
+  /* Icon Colors */
+  .stat-card.primary .stat-icon {
+    background: #ebf8ff;
+    color: #4299e1;
+  }
+  
+  .stat-card.success .stat-icon {
+    background: #f0fff4;
+    color: #48bb78;
+  }
+  
+  .stat-card.warning .stat-icon {
+    background: #fffaf0;
+    color: #ed8936;
+  }
+  
+  .stat-card.danger .stat-icon {
+    background: #fff5f5;
+    color: #f56565;
+  }
+  
+  .stat-card.purple .stat-icon {
+    background: #faf5ff;
+    color: #9f7aea;
+  }
+  
+  /* Content Area */
+  .stat-content {
+    flex-grow: 1;
+  }
+  
+  .stat-content h3 {
+    margin: 0 0 6px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .stat-content p {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2d3748;
+  }
+  
+  /* Loading State */
+  .stat-content p:empty::before,
+  .stat-content p:contains("Loading...") {
+    color: #a0aec0;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  /* Error State */
+  .stat-content p:contains("Error") {
+    color: #f56565;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .stat-card {
+      padding: 15px;
+    }
+    
+    .stat-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      margin-right: 15px;
+    }
+    
+    .stat-content h3 {
+      font-size: 0.85rem;
+    }
+    
+    .stat-content p {
+      font-size: 1.5rem;
+    }
+  }

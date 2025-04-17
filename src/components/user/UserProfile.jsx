@@ -3,6 +3,8 @@ import React from "react";
 
 export const UserProfile = ({ toggleSidebar }) => {
   return (
+   
+   
     <nav className="app-header navbar navbar-expand bg-body">
       {/*begin::Container*/}
       <div className="container-fluid">
@@ -225,5 +227,6 @@ export const UserProfile = ({ toggleSidebar }) => {
         </ul>
       </div>
     </nav>
+   
   );
 };

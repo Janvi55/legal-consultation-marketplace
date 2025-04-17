@@ -1,0 +1,149 @@
+/* Main Container */
+.activity-feed {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    margin: 20px 0;
+    border: 1px solid #eaeaea;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  }
+  
+  /* Header */
+  .activity-feed h3 {
+    color: #2d3748;
+    margin: 0 0 20px 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f2f5;
+  }
+  
+  .activity-feed h3::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 20px;
+    background: #4299e1;
+    margin-right: 12px;
+    border-radius: 3px;
+  }
+  
+  /* Activity List */
+  .activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .activity-item {
+    padding: 16px 0;
+    position: relative;
+    padding-left: 28px;
+    border-bottom: 1px solid #f5f7fa;
+  }
+  
+  .activity-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Timeline Dot */
+  .activity-item::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 22px;
+    width: 10px;
+    height: 10px;
+    background: #4299e1;
+    border-radius: 50%;
+    border: 2px solid #ebf8ff;
+  }
+  
+  /* Activity Content */
+  .activity-message {
+    font-size: 0.95rem;
+    color: #4a5568;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+  
+  .activity-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.82rem;
+  }
+  
+  .activity-user {
+    color: #4a5568;
+    font-weight: 500;
+  }
+  
+  .activity-time {
+    color: #718096;
+  }
+  
+  /* System-generated activities */
+  .activity-item.system::before {
+    background: #9f7aea;
+    border-color: #faf5ff;
+  }
+  
+  /* Loading State */
+  .loading {
+    padding: 20px 0;
+    text-align: center;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .loading::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(66, 153, 225, 0.2);
+    border-radius: 50%;
+    border-top-color: #4299e1;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Empty State */
+  .empty {
+    text-align: center;
+    padding: 30px 20px;
+    color: #a0aec0;
+    font-size: 0.9rem;
+    background: #f8fafc;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .activity-feed {
+      padding: 16px;
+    }
+    
+    .activity-item {
+      padding-left: 24px;
+    }
+    
+    .activity-meta {
+      flex-direction: column;
+      gap: 2px;
+    }
+    
+    .activity-time {
+      font-size: 0.75rem;
+    }
+  }
