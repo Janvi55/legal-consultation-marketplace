@@ -1,0 +1,11 @@
+
+.view-lawyers-container {
+    background: linear-gradient(to bottom right, #e6f0f8, #d1e0f0); /* soft legal blue tones */
+    background-color: #e6f0f8;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  

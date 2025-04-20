@@ -1,0 +1,73 @@
+.admin-dashboard {
+    min-height: 100vh;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+    transition: width 0.3s;
+  }
+  
+  .sidebar.collapsed {
+    width: 70px;
+  }
+  
+  .sidebar .toggle-btn {
+    background: none;
+    border: none;
+    float: right;
+    font-size: 1.2rem;
+  }
+  
+  .sidebar .nav-link {
+    color: #333;
+    padding: 10px 0;
+    display: block;
+  }
+  
+  .main-content {
+    background: #fff;
+  }
+  
+  .dark-mode {
+    background-color: #1e1e2f !important;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode .card {
+    background-color: #2e2e3e;
+    color: #fff;
+  }
+  
+  .dark-mode .navbar {
+    background-color: #2c2c3c !important;
+    color: #fff;
+  }
+  
+  .dark-mode .sidebar {
+    background-color: #29293d;
+  }
+  
+  .dark-mode .nav-link {
+    color: #bbb !important;
+  }
+  
+
+/* Force 3 cards per row max on large screens */
+@media (min-width: 992px) {
+  .stat-grid-row > .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/* Stack one per row on small devices */
+@media (max-width: 576px) {
+  .stat-grid-row > .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

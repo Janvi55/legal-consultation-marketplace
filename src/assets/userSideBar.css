@@ -1,0 +1,17 @@
+/* Sidebar animation */
+.sidebar-open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-closed {
+    transform: translateX(-100%);
+  }
+  
+  /* Keep sidebar fixed on desktop */
+  @media (min-width: 768px) {
+    .sidebar-open,
+    .sidebar-closed {
+      transform: translateX(0) !important;
+    }
+  }
+  

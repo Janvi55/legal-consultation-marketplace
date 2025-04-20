@@ -1,0 +1,38 @@
+/* Sidebar styles */
+.sidebar {
+    width: 250px; /* Set width for the sidebar */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    background-color: #343a40;
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-100%); /* Hide sidebar when closed */
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Show sidebar when open */
+  }
+  
+  /* Main content styles */
+  .main-content {
+    margin-left: 250px; /* Adjust margin when sidebar is open */
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .main-content.with-sidebar {
+    margin-left: 250px; /* Sidebar is open */
+  }
+  
+  .main-content.full-width {
+    margin-left: 0; /* Sidebar is closed */
+  }
+  
+  /* Optional: Add some padding or margin to the main content for better spacing */
+  .main-content .p-3 {
+    padding: 20px;
+  }

@@ -1,0 +1,117 @@
+/* General Layout Styling */
+.p-4 {
+    padding: 1rem;
+  }
+  
+  /* Responsive Container */
+  @media (max-width: 768px) {
+    .p-4 {
+      padding: 0.5rem;
+    }
+  }
+  
+  /* FullCalendar Adjustments */
+  .fc {
+    width: 100%;  /* Make calendar width responsive */
+  }
+  
+  .fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .fc-toolbar button {
+    padding: 10px;
+  }
+  
+  .fc-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Event Details Modal */
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .bg-opacity-40 {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .bg-white {
+    background-color: white;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .max-w-lg {
+    max-width: 800px; /* Ensure modal is not too wide on large screens */
+  }
+  
+  .sm\\:max-w-md {
+    max-width: 600px; /* Set max-width for small screens */
+  }
+  
+  button {
+    padding: 10px 20px;
+  }
+  
+  /* Responsive Design for Event Details */
+  @media (max-width: 600px) {
+    .text-xl {
+      font-size: 1.25rem;  /* Reduce font size on small screens */
+    }
+  
+    .font-bold {
+      font-weight: 600;
+    }
+  
+    .p-6 {
+      padding: 1rem;  /* Reduce padding inside modal */
+    }
+  
+    .w-full {
+      width: 90%;  /* Make modal slightly smaller on mobile */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fc-toolbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .fc-toolbar button {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .fc-toolbar button {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .fc-toolbar button {
+      font-size: 0.9rem;  /* Adjust font size for smaller devices */
+      padding: 8px;
+    }
+  }
+  
+  

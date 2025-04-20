@@ -1,0 +1,262 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    background: url('https://assets.onecompiler.app/43dpwcgs5/43dpwbf5m/img_bg_1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Overlay effect */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Content above overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    color: white;
+}
+
+.hero button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #b8942b;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    padding: 50px 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-box {
+    background-color: #3c4d71;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    flex: 1 1 300px;
+    max-width: 500px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-box a {
+    color: #d4af37;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* New Lawyer Section */
+.lawyer-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f4f4f4, #e8ecf1);
+    text-align: center;
+    color: #222;
+}
+
+.lawyer-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.lawyer-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.lawyer-card {
+    width: 260px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: white;
+    color: #000;
+}
+
+.lawyer-card:hover {
+    transform: translateY(-8px);
+}
+
+.lawyer-img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lawyer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+}
+
+.lawyer-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.lawyer-specialization {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.view-more-btn-container {
+    margin-top: 30px;
+}
+
+.view-more-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #f1c40f;
+    border: none;
+    transition: background 0.3s ease;
+    color: #fff;
+}
+
+.view-more-btn:hover {
+    background-color: #d4ac0d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero button {
+        padding: 10px 25px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box {
+        width: 90%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .lawyer-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero a {
+        font-size: 0.9rem;
+    }
+
+    .hero button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    .contact-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .lawyer-card {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+
+.lawyer-card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  .lawyer-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #e0f3f5, #cfe0eb); /* soft teal/blue fade */
+    color: #222;
+    text-align: center;
+  }
+  
+  
