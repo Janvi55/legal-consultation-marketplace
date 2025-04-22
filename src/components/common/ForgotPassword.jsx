@@ -23,7 +23,7 @@ export const ForgotPassword = () => {
     try {
 
       setisLoading(true) 
-      const res = await axios.post("/forgotPassword", { email: data.email  });
+      const res = await axios.post("users/forgotpassword", { email: data.email  });
       console.log(res.data);
       setisLoading(false)
 

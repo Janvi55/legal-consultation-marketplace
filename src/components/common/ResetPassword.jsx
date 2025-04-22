@@ -23,7 +23,7 @@ export const ResetPassword = () => {
             token : token,
             password:data.password
         }
-      const res = await axios.post("/resetPassword", obj);
+      const res = await axios.post("/users/resetpassword", obj);
       console.log(res.data);
 
       if (res.status === 200) {
